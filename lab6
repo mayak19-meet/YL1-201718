@@ -1,0 +1,20 @@
+from turtle import*
+import random
+import math
+
+class ball(Turtle):
+	def __init__(self,radius,color,speed):
+		Turtle.__init__(self)
+		self.shape("circle")
+		self.shapesize(radius)
+		self.color(color)
+		self.speed(speed)
+def check_collision(ball1,ball2):
+	d=math.sqrt(math.pow((ball1.xcor()-ball2.xcor()),2)+math.pow((ball1.ycor()-ball2.ycor()),2))
+	ssum=(ball1.radius())+(ball2.radius())
+	if d <=ssum
+		ball1.speed(5000)
+		ball2.speed(40000)
+
+ball1=Ball(7,"pink",10)
+ball2=Ball(5,"green",100)
